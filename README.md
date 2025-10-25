@@ -1,73 +1,135 @@
-# Welcome to your Lovable project
+# Student Attendance Management System
 
-## Project info
+A modern web application for managing student attendance built with React, TypeScript, and Supabase. The system provides an intuitive interface for marking and tracking student attendance with real-time updates.
 
-**URL**: https://lovable.dev/projects/13107311-277c-4361-a537-de2af2180c25
+## Features
 
-## How can I edit this code?
+- 🔐 Secure Authentication
+- 📝 Mark Attendance
+- 📊 Check Attendance Records
+- 📱 Responsive Design
+- 🎨 Modern UI with Shadcn/ui
+- 🔄 Real-time Updates with Supabase
 
-There are several ways of editing your application.
+## Tech Stack
 
-**Use Lovable**
+- **Frontend Framework**: React 18 with TypeScript
+- **Build Tool**: Vite
+- **UI Components**: Shadcn/ui
+- **Styling**: TailwindCSS
+- **Backend/Database**: Supabase
+- **Form Handling**: React Hook Form with Zod validation
+- **Data Visualization**: Recharts
+- **Routing**: React Router DOM
+- **State Management**: React Query
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/13107311-277c-4361-a537-de2af2180c25) and start prompting.
+## Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+Before running this project, make sure you have:
 
-**Use your preferred IDE**
+- Node.js (v16 or higher)
+- npm or yarn or pnpm
+- A Supabase account and project
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## Installation
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Vansh281999/Student-Attendance-Management-System.git
+   cd Student-Attendance-Management-System
+   ```
 
-Follow these steps:
+2. Install dependencies:
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Create a `.env` file in the root directory with your Supabase credentials:
+   ```env
+   VITE_SUPABASE_URL=your_supabase_project_url
+   VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Development
 
-# Step 3: Install the necessary dependencies.
-npm i
+To start the development server:
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
 ```
 
-**Edit a file directly in GitHub**
+The application will be available at `http://localhost:5173`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Building for Production
 
-**Use GitHub Codespaces**
+To create a production build:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+npm run build
+# or
+yarn build
+# or
+pnpm build
+```
 
-## What technologies are used for this project?
+To preview the production build:
 
-This project is built with:
+```bash
+npm run preview
+# or
+yarn preview
+# or
+pnpm preview
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Project Structure
 
-## How can I deploy this project?
+```
+src/
+  ├── components/      # Reusable UI components
+  ├── contexts/       # React context providers
+  ├── hooks/          # Custom React hooks
+  ├── integrations/   # External service integrations
+  ├── lib/           # Utility functions
+  ├── pages/         # Application pages/routes
+  └── App.tsx        # Root component
+```
 
-Simply open [Lovable](https://lovable.dev/projects/13107311-277c-4361-a537-de2af2180c25) and click on Share -> Publish.
+## Features in Detail
 
-## Can I connect a custom domain to my Lovable project?
+### Authentication
+- Secure user authentication using Supabase Auth
+- Protected routes for authenticated users
+- User role management
 
-Yes, you can!
+### Attendance Management
+- Mark attendance for individual students
+- Bulk attendance marking
+- View attendance history
+- Generate attendance reports
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### User Interface
+- Responsive design for all screen sizes
+- Dark/Light theme support
+- Modern and clean UI components
+- Interactive data visualizations
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
